@@ -34,7 +34,7 @@
           "questions": [
             {
               "id": "personAddress",
-              "legend": "Person.address",
+              "legend": "registrationapp.patient.address.required",
               "fields": [
                 {
                   "type": "personAddress",

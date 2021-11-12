@@ -215,7 +215,7 @@ fieldset[id\$="-fieldset"] div > div {
 
                         <${combineSubSections == true ? "div" : "fieldset"} id="demographics-name">
 
-                            ${combineSubSections == true ? "" : "<legend>" + ui.message("registrationapp.patient.name.label") + "</legend>"}
+                            ${combineSubSections == true ? "" : "<legend>" + ui.message("registrationapp.patient.name.required.label") + "</legend>"}
                             <div>
                                 <h3>${ui.message("registrationapp.patient.name.question")}</h3>
 
@@ -280,7 +280,7 @@ fieldset[id\$="-fieldset"] div > div {
 
                         <${combineSubSections == true ? "div" : "fieldset"} id="demographics-gender">
 
-                            ${combineSubSections == true ? "" : "<legend id=\"genderLabel\">" + ui.message("emr.gender") + "</legend>"}
+                            ${combineSubSections == true ? "" : "<legend id=\"genderLabel\">" + ui.message("registrationapp.patient.gender.required") + "</legend>"}
 
                             ${ ui.includeFragment("uicommons", "field/dropDown", [
                                     id: "gender",
@@ -298,7 +298,7 @@ fieldset[id\$="-fieldset"] div > div {
 
                         <${combineSubSections == true ? "div" : "fieldset"} id="demographics-birthdate" class="multiple-input-date date-required no-future-date">
 
-                            ${combineSubSections == true ? "" : "<legend id=\"birthdateLabel\">" + ui.message("registrationapp.patient.birthdate.label") + "</legend>"}
+                            ${combineSubSections == true ? "" : "<legend id=\"birthdateLabel\">" + ui.message("registrationapp.patient.birthdate.required.label") + "</legend>"}
 
                             ${ ui.includeFragment("uicommons", "field/multipleInputDate", [
                                     label: ui.message("registrationapp.patient.birthdate.question"),
